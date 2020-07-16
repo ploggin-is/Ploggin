@@ -1,3 +1,3 @@
 ---
-permalink: /index.html sdfj
+permalink: /index.html
 ---
