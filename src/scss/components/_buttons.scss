@@ -7,6 +7,24 @@
     font-weight: $headings-font-weight;
 }
 
+#cover-drop-down {
+    box-shadow: none;
+    opacity: 0.7;
+    background-color: $light_brown;
+    border: none;
+
+    &:focus,
+    &:visited {
+       opacity: 0.7;
+    }
+
+    &:hover,
+    &:active,
+    &:active:hover {
+       opacity: 0.9;
+    }
+}
+
 .btn-social {
     height: 2.5rem;
     width: 2.5rem;
