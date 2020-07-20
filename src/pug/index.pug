@@ -40,7 +40,7 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Portfolio
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Blogg-In
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#team') Team
                         li.nav-item
@@ -174,8 +174,8 @@ html(lang='en')
         section#portfolio.page-section.bg-light
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Portfolio
-                    h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
+                    h2.section-heading.text-uppercase Blogg-In
+                    h3.section-subheading.text-muted Some interesting articles from us!
                 .row
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
@@ -184,9 +184,9 @@ html(lang='en')
                                     .portfolio-hover-content
                                         i.fas.fa-plus.fa-3x
                                 img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Threads
-                                .portfolio-caption-subheading.text-muted Illustration
+                            .portfolio-caption(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-caption-heading Ploggin-In
+                                .portfolio-caption-subheading.text-muted Read more to find out what is Plogg-In!
                     .col-lg-4.col-sm-6.mb-4
                         .portfolio-item
                             a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
@@ -359,14 +359,14 @@ html(lang='en')
                             .col-lg-8
                                 .modal-body
                                     // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    h2.text-uppercase Plogg-In
+                                    p.item-intro.text-muted What is Plogg-in? And why do we need it?
                                     img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
                                     p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
                                     ul.list-inline
                                         li Date: January 2020
-                                        li Client: Threads
-                                        li Category: Illustration
+                                        li Author: Guolin Fang
+                                        li Category: Plogg-In
                                     button.btn.btn-primary(data-dismiss='modal', type='button')
                                         i.fas.fa-times.mr-1
                                         | Close Project
