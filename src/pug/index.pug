@@ -36,7 +36,9 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Services
+                            a.nav-link.js-scroll-trigger(href='#services') Vision & Mission
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#product') Product
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#about') About
                         li.nav-item
@@ -48,18 +50,23 @@ html(lang='en')
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Hjálpum umhverfinu!
-                .masthead-heading.text-uppercase Plokkum Rusl
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down Sjá Nánar
+                .masthead-subheading Find out how you can make an impact on the planet Earth!
+                .masthead-heading.text-uppercase #nomorelitters
+                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down See more
 
         // Services
         section#services.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Our Vision & Mission
-                    h3.section-subheading.text-muted With a better information technology tools and a strong communication system, we can make every part of the map Green!
+                    h2.section-heading.text-uppercase Vision & Mission
+                    h3.section-subheading.text-muted By providing a better information technology tools and a strong communication system, we can make every part of the map Green!
                     img.img-fluid.d-block.mx-auto(src='assets/img/map.png', alt='')
-               
+        
+        // Services
+        section#product.page-section 
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Product
             .container
                 .row.text-center
                     .col-md-4
