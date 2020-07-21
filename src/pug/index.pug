@@ -36,9 +36,11 @@ html(lang='en')
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Services
+                            a.nav-link.js-scroll-trigger(href='#services') Vision & Mission
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') About
+                            a.nav-link.js-scroll-trigger(href='#product') Product
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about') Timeline
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#portfolio') Blogg-In
                         li.nav-item
@@ -48,18 +50,23 @@ html(lang='en')
         // Masthead
         header.masthead
             .container
-                .masthead-subheading Hjálpum umhverfinu!
-                .masthead-heading.text-uppercase Plokkum Rusl
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down Sjá Nánar
+                .masthead-subheading Find out how YOU can make an impact on the planet Earth!
+                .masthead-heading.text-uppercase #nomorelitters
+                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down See more
 
         // Services
         section#services.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Our Vision & Mission
-                    h3.section-subheading.text-muted With a better information technology tools and a strong communication system, we can make every part of the map Green!
+                    h2.section-heading.text-uppercase Vision & Mission
+                    h3.section-subheading.text-muted By providing a better information technology tools and a strong communication system, we can make every part of the map GREEN!
                     img.img-fluid.d-block.mx-auto(src='assets/img/map.png', alt='').w-50.p-3
-               
+        
+        // Services
+        section#product.page-section 
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Product
             .container
                 .row.text-center
                     .col-md-4
@@ -84,7 +91,7 @@ html(lang='en')
         section#about.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase About
+                    h2.section-heading.text-uppercase Timeline
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 ul.timeline
                     li
@@ -332,7 +339,7 @@ html(lang='en')
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-left
-                        | Copyright © Your Website 2020
+                        | Copyright © PLOGG-IN 2020
                     .col-lg-4.my-3.my-lg-0
                         a.btn.btn-dark.btn-social.mx-2(href='#!')
                             i.fab.fa-twitter
