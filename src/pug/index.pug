@@ -8,7 +8,7 @@ html(lang='en')
         meta(name='description', content='')
         meta(name='author', content='')
 
-        title Agency - Start Bootstrap Theme
+        title PLOGG - IN
 
         link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
 
@@ -31,8 +31,7 @@ html(lang='en')
                 a.navbar-brand.js-scroll-trigger(href='#page-top')
                     img(src='assets/img/logos/ploggin_logo.jpg', alt='')
                 button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    | Menu
-                    i.fas.fa-bars.ml-1
+                    i.fas.fa-bars
                 #navbarResponsive.collapse.navbar-collapse
                     ul.navbar-nav.text-uppercase.ml-auto
                         li.nav-item
@@ -40,11 +39,11 @@ html(lang='en')
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#product') Product
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') Timeline
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#portfolio') Blogg-In
+                            a.nav-link.js-scroll-trigger(href='#about') Our Story
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#team') Team
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#portfolio') Blogg-In
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact') Contact
         // Masthead
@@ -71,22 +70,19 @@ html(lang='en')
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-shopping-cart.fa-stack-1x.fa-inverse
+                            i.far.fa-map.fa-stack-1x
                         h4.my-3 Plogg-In
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-laptop.fa-stack-1x.fa-inverse
+                            i.far.fa-hdd.fa-stack-1x
                         h4.my-3 Gögn-In
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
                     .col-md-4
                         span.fa-stack.fa-4x
-                            i.fas.fa-circle.fa-stack-2x.text-primary
-                            i.fas.fa-lock.fa-stack-1x.fa-inverse
+                            i.far.fa-trash-alt.fa-stack-1x
                         h4.my-3 B-In
                         p.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.
@@ -94,7 +90,7 @@ html(lang='en')
         section#about.page-section
             .container
                 .text-center
-                    h2.section-heading.text-uppercase Timeline
+                    h2.section-heading.text-uppercase Our Story
                     h3.section-subheading.text-muted Lorem ipsum dolor sit amet consectetur.
                 ul.timeline
                     li
@@ -175,46 +171,6 @@ html(lang='en')
                                 | Of Our
                                 br
                                 | Story!
-
-
-        // Portfolio Grid
-        section#portfolio.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Blogg-In
-                    h3.section-subheading.text-muted Some interesting articles from us!
-                .row
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
-                            .portfolio-caption(data-toggle='modal', href='#portfolioModal1')
-                                .portfolio-caption-heading Ploggin-In
-                                .portfolio-caption-subheading.text-muted Read more to find out what is Plogg-In!
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Explore
-                                .portfolio-caption-subheading.text-muted Graphic Design
-                    .col-lg-4.col-sm-6.mb-4
-                        .portfolio-item
-                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
-                                .portfolio-hover
-                                    .portfolio-hover-content
-                                        i.fas.fa-plus.fa-3x
-                                img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
-                            .portfolio-caption
-                                .portfolio-caption-heading Finish
-                                .portfolio-caption-subheading.text-muted Identity
-
         // Team
         section#team.page-section.bg-light
             .container
@@ -293,6 +249,44 @@ html(lang='en')
                     .col-lg-8.mx-auto.text-center
                         p.large.text-muted
                             | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.
+
+        // Portfolio Grid
+        section#portfolio.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase Blogg-In
+                    h3.section-subheading.text-muted Some interesting articles from us!
+                .row
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+                            .portfolio-caption(data-toggle='modal', href='#portfolioModal1')
+                                .portfolio-caption-heading Ploggin-In
+                                .portfolio-caption-subheading.text-muted Read more to find out what is Plogg-In!
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Explore
+                                .portfolio-caption-subheading.text-muted Graphic Design
+                    .col-lg-4.col-sm-6.mb-4
+                        .portfolio-item
+                            a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+                                .portfolio-hover
+                                    .portfolio-hover-content
+                                        i.fas.fa-plus.fa-3x
+                                img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
+                            .portfolio-caption
+                                .portfolio-caption-heading Finish
+                                .portfolio-caption-subheading.text-muted Identity
 
         // Clients
         div.py-5
