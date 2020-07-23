@@ -10006,6 +10006,11 @@ p {
   color: green;
 }
 
+.clients img {
+  -webkit-filter: grayscale(100%) brightness(60%) contrast(500%);
+  opacity: 0.3;
+}
+
 .page-section {
   padding: 6rem 0;
 }
