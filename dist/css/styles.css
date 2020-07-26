@@ -10345,6 +10345,12 @@ header.masthead .masthead-heading {
   line-height: 14px;
   margin-top: 12px;
 }
+.timeline > li .timeline-big {
+  background-color: white;
+}
+.timeline > li .timeline-big h4 {
+  color: #6c757d;
+}
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
@@ -10407,6 +10413,16 @@ header.masthead .masthead-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+  .timeline > li .timeline-big {
+    width: 175px;
+    height: 175px;
+    margin-left: -89px;
+  }
+  .timeline > li .timeline-big h4 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 36px;
+  }
 }
 @media (min-width: 992px) {
   .timeline > li {
@@ -10427,6 +10443,16 @@ header.masthead .masthead-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
+  }
+  .timeline > li .timeline-big {
+    width: 230px;
+    height: 230px;
+    margin-left: -117px;
+  }
+  .timeline > li .timeline-big h4 {
+    font-size: 33px;
+    line-height: 39px;
+    margin-top: 49px;
   }
 }
 @media (min-width: 1200px) {
