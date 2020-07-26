@@ -10161,7 +10161,7 @@ header.masthead {
   background-image: url("../assets/img/header-bg-crop.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: right;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
