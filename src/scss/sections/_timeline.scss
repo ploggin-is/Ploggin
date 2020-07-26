@@ -1,4 +1,8 @@
 // Styling for the timeline section
+
+$story-bullet-bg-color: white;
+$story-bullet-txt-color: #6c757d;
+
 .timeline {
     position: relative;
     padding: 0;
@@ -60,6 +64,13 @@
                 font-size: 10px;
                 line-height: 14px;
                 margin-top: 12px;
+            }
+        }
+        .timeline-big {
+            background-color: $story-bullet-bg-color;
+            border: 7px solid #b0f9c2;
+            h4 {
+                color: $story-bullet-txt-color;
             }
         }
         &.timeline-inverted > .timeline-panel {
@@ -129,6 +140,16 @@
                 padding: 0 30px 20px 20px;
                 text-align: left;
             }
+            .timeline-big {
+                width: 175px;
+                height: 175px;
+                margin-left: -89px;
+                h4 {
+                    font-size: 26px;
+                    line-height: 30px;
+                    margin-top: 36px;
+                }
+            }
         }
     }
 }
@@ -152,6 +173,16 @@
             &.timeline-inverted > .timeline-panel {
                 padding: 0 20px 20px;
             }
+            .timeline-big {
+                width: 230px;
+                height: 230px;
+                margin-left: -117px;
+                h4 {
+                    font-size: 33px;
+                    line-height: 39px;
+                    margin-top: 49px;
+                }
+            }
         }
     }
 }
@@ -172,6 +203,16 @@
             }
             &.timeline-inverted > .timeline-panel {
                 padding: 0 100px 20px 20px;
+            }
+            .timeline-big {
+                width: 230px;
+                height: 230px;
+                margin-left: -117px;
+                h4 {
+                    font-size: 33px;
+                    line-height: 39px;
+                    margin-top: 49px;
+                }
             }
         }
     }

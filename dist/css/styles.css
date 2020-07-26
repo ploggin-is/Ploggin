@@ -10002,8 +10002,13 @@ p {
   line-height: 1.75;
 }
 
-.container svg {
+.container .svg-green {
   color: green;
+}
+
+.clients img {
+  -webkit-filter: grayscale(100%) brightness(60%) contrast(500%);
+  opacity: 0.3;
 }
 
 .page-section {
@@ -10087,10 +10092,10 @@ img::-moz-selection {
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  font-size: 0.75rem;
+  font-size: 1.75rem;
   color: #fff;
   text-transform: uppercase;
-  background-color: #008000;
+  background-color: #212529;
   border: 0;
 }
 #mainNav .navbar-brand {
@@ -10101,7 +10106,7 @@ img::-moz-selection {
   text-transform: uppercase;
 }
 #mainNav .navbar-brand img {
-  height: 1.5rem;
+  height: 2.5rem;
 }
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10156,7 +10161,7 @@ header.masthead {
   background-image: url("../assets/img/header-bg-crop.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: right;
   background-size: cover;
 }
 header.masthead .masthead-subheading {
@@ -10340,6 +10345,13 @@ header.masthead .masthead-heading {
   line-height: 14px;
   margin-top: 12px;
 }
+.timeline > li .timeline-big {
+  background-color: white;
+  border: 7px solid #b0f9c2;
+}
+.timeline > li .timeline-big h4 {
+  color: #6c757d;
+}
 .timeline > li.timeline-inverted > .timeline-panel {
   float: right;
   padding: 0 20px 0 100px;
@@ -10402,6 +10414,16 @@ header.masthead .masthead-heading {
     padding: 0 30px 20px 20px;
     text-align: left;
   }
+  .timeline > li .timeline-big {
+    width: 175px;
+    height: 175px;
+    margin-left: -89px;
+  }
+  .timeline > li .timeline-big h4 {
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 36px;
+  }
 }
 @media (min-width: 992px) {
   .timeline > li {
@@ -10423,6 +10445,16 @@ header.masthead .masthead-heading {
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 20px 20px;
   }
+  .timeline > li .timeline-big {
+    width: 230px;
+    height: 230px;
+    margin-left: -117px;
+  }
+  .timeline > li .timeline-big h4 {
+    font-size: 33px;
+    line-height: 39px;
+    margin-top: 49px;
+  }
 }
 @media (min-width: 1200px) {
   .timeline > li {
@@ -10441,6 +10473,16 @@ header.masthead .masthead-heading {
   }
   .timeline > li.timeline-inverted > .timeline-panel {
     padding: 0 100px 20px 20px;
+  }
+  .timeline > li .timeline-big {
+    width: 230px;
+    height: 230px;
+    margin-left: -117px;
+  }
+  .timeline > li .timeline-big h4 {
+    font-size: 33px;
+    line-height: 39px;
+    margin-top: 49px;
   }
 }
 .team-member {
