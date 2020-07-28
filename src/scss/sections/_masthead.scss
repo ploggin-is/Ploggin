@@ -1,6 +1,8 @@
 // Styling for the masthead
 header.masthead {
-    padding-top: 6rem + 4.5rem;
+    height: 100vh;
+    min-height: 500px;
+    padding-top: 16rem;
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
