@@ -10154,7 +10154,9 @@ img::-moz-selection {
   }
 }
 header.masthead {
-  padding-top: 10.5rem;
+  height: 100vh;
+  min-height: 500px;
+  padding-top: 16rem;
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
