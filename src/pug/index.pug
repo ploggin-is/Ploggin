@@ -1,503 +1,158 @@
+extends index_base.pug
 
-html(lang='en')
+//-//////////////
+//- NAVBAR
+block vision
+    div Stefna og markmið
 
-    head
+block vision_text
+    div Með betri upplýsingatæknitól og sterkari samskiptakerfum getum við gert allt kortið grænt!
 
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='With a better information technology tools and a strong communication system, we can make every part of the map green')
-        meta(name='author', content='')
+block services
+    div Þjónustur
 
-        title PLOGGIN
+block about
+    div Sagan okkar
 
-        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+block team
+    div Teymið
 
-        // Font Awesome icons (free version)
-        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+block contact
+    div Hafa samband
 
-        // Google fonts
-        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
-        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+block language
+    a.nav-link.js-scroll-trigger(href='./IS/index.html', style='padding-top: 5px;')
+        img(src='assets/img/icelandic.png', alt='icelandic')
 
-        // Core theme CSS (includes Bootstrap)
-        link(href='css/styles.css', rel='stylesheet')
+//-//////////////
+//- MASTERHEAD
+block subtitle
+    div Sjáðu hvernig ÞÚ getur gert heiminn að betri stað!
 
-    body#page-top
+block title
+    div Vertu með
 
-        // Navigation
-        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
-            .container
-                a.navbar-brand.js-scroll-trigger(href='#page-top')
-                    img(src='assets/img/logos/ploggin_logo.jpg', alt='')
-                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
-                    i.fas.fa-bars
-                #navbarResponsive.collapse.navbar-collapse
-                    ul.navbar-nav.text-uppercase.ml-auto
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#services') Stefna og markmið
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#product') Þjónustur
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about') Sagan okkar
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#team') Teymið
-                        //li.nav-item
-                        //    a.nav-link.js-scroll-trigger(href='#portfolio') Blogg-In
-                        li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#contact') Hafa samband
-        // Masthead
-        header.masthead
-            .container
-                .masthead-subheading Sjáðu hvernig ÞÚ getur gert heiminn að betri stað!
-                .masthead-heading.text-uppercase Vertu með
-                a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down Sjá meira
-                // TODO think about short Title to avoid grid overflow
-                //h1.text-uppercase Litters
+block seemore
+    div Sjá meira
 
-        // Services
-        section#services.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Stefna og markmið
-                    h3.section-subheading.text-muted Með betri upplýsingatæknitól og sterkari samskiptakerfum getum við gert allt kortið grænt!
-                    img.img-fluid.d-block.mx-auto(src='assets/img/map.png', alt='').w-75.p-3
-        
-        // Services
-        section#product.page-section 
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Þjónustur
-            .container
-                .row.text-center
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.far.fa-map.fa-stack-1x.svg-green
-                        h4.my-3 Plogg-In
-                        p.text-muted
-                            | Plogg-In er kortlagningarkerfi fyrir plokkara, útivistarfólk og umhverfissinna sem hvetur til aukinnar umhverfisvitundar, verndar og stuðlar um leið að heilsueflandi hreyfingu. Kortið er með einfalt viðmót sem sýnir þau svæði sem er búið að hreinsa og gerir notendum kleift að skipuleggja plokkferðir sínar.
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.far.fa-hdd.fa-stack-1x.svg-green
-                        h4.my-3 Gögn-In
-                        p.text-muted
-                            | Gögn-In er kerfi sem safnar landfræðilegum rauntímagögnum til bestunar á ýmsum umhverfistengdum verkefnum og rannsóknum og staðlar þau. 
-                    .col-md-4
-                        span.fa-stack.fa-4x
-                            i.far.fa-trash-alt.fa-stack-1x.svg-green
-                        h4.my-3 B-In
-                        p.text-muted
-                            | B-In er kerfi sem notar bæði gögn úr Plogg-In og Gögn-In til að álykta stöðu ruslastampa í rauntíma.
-        // About
-        section#about.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Sagan okkar
-                    h3.section-subheading.text-muted Tímalína sem stiklar á stóru um sögu Plogg-In.
-                ul.timeline
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/snjallborgin2018.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 Maí 2018
-                                h4.subheading Topp 3 Borgarhakkið
-                            .timeline-body
-                                p.text-muted
-                                    | Grunnhugmynd fyrir Plogg-In varð til í Borgarhakki Reykjavíkurborgar 2018 en þar komst teymið í þriggja liða úrslit og hefur síðan þá unnið með Snjallborginni í Reykjavík í að betrumbæta hugmyndina.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/plokkaradagurinn.png', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 Apríl 2019
-                                h4.subheading Stóri plokkdagurinn
-                            .timeline-body
-                                p.text-muted
-                                    | Stóri plokkdagurinn var haldinn 28.apríl 2019 en þá fengust yfir 1000 skráningar sem sýndu svæði sem voru hreinsuð en á einum degi var samanlögð stærð þeirra á við Vestmannaeyjar (17.2 km2).
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/milljonaskorun.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 September 2019
-                                h4.subheading Sigruðum Milljón tonna áskorun
-                            .timeline-body
-                                p.text-muted
-                                    | Gögn-In vann Milljón tonna áskorun Viðskiptaráðs með kerfi sínu þar sem lögð var áhersla á að safna landfræðilegum rauntímagögnum og staðla þau sem seinna nýtast við margskonar rannsóknir.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/borgarhakkid2019.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 September 2019
-                                h4.subheading Sigruðum Borgarhakkið
-                            .timeline-body
-                                p.text-muted
-                                    | Gögn-In hlaut sigur úr býtum í Borgarhakki Reykjavíkurborgar 2019 með hugmynd að betri tímatöflu fyrri strætó sem sameinar núverandi tímatöflu Strætó og stundartöflu frá öllum skólum á Íslandi.
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/snjallraedi2019.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 Október 2019
-                                h4.subheading Snjallræði
-                            .timeline-body
-                                p.text-muted
-                                    | Plogg-In hlaut þátttökurétt í Snjallræði 2019 þar sem teymið fékk leiðsögn séfræðinga frá MIT-Design X auk annarra mentora í að smíða viðskiptalíkan fyrir Plogg-In.
-                    li.timeline-inverted
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/smartcity.jpg', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 Nóvember 2019
-                                h4.subheading Smart City expo
-                            .timeline-body
-                                p.text-muted
-                                    | Í samstarfi við Reykjavíkurborg fór teymið til Barcelona á Smart City Expo 2019, eina stærstu snjallborgarráðstefnu heims, þar sem B-in og Plogg-in voru kynntar. Plogg-In vakti mikinn  áhuga, þ.á.m. hjá borgarfulltrúa Helsinki og Stokkhólms. Teymið er einnig í samstarfi við Reyjavíkurborg í að nota rauntímagögn til að álykta stöðu ruslastama í borgarinnar til að koma í veg fyrir yfirflæði rusls. 
-                    li
-                        .timeline-image
-                            img.rounded-circle.img-fluid(src='assets/img/about/topsprota.png', alt='')
-                        .timeline-panel
-                            .timeline-heading
-                                h4 Febrúar 2020
-                                h4.subheading Topp 3 sprota ársins 
-                            .timeline-body
-                                p.text-muted
-                                    | Plogg-In var tilnefnt sem Sprotafyrirtæki ársins 2020 að mati Ský í UT messunni, í flokki með Genki Instrument og Emblu frá Miðeind. Teymið hlaut Genki Instrument verðlaunin.
-                    li.timeline-inverted
-                        .timeline-image.timeline-big
-                            h4
-                                | Vertu hluti
-                                br
-                                | af okkar
-                                br
-                                | sögu!
-        // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Okkar magnaða teymi
-                    h3.section-subheading.text-muted Plogg-In teymið samanstendur af sex metnaðarfullum einstaklingum með ólíkan bakgrunn. 
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/kristjana.png', alt='')
-                            h4 Kristjana Björk Barðdal
-                            p.text-muted Framkvæmdarstjóri og meðstofnandi
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/stefan.jpg', alt='')
-                            h4 Stefán Carl Peiser
-                            p.text-muted CTO og meðstofnandi
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/guolin.jpg', alt='')
-                            h4 Guolin Fang
-                            p.text-muted Forritari og stofnandi
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/hulda.jpg', alt='')
-                            h4 Hulda Vigdísardóttir
-                            p.text-muted Markaðssetning
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/thorgeir.jpg', alt='')
-                            h4 Þorgeir Sigurðsson
-                            p.text-muted Sjáfvirknis sérfræðingur
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/sollilja.jpg', alt='')
-                            h4 Sóllilja Bjarnadóttir
-                            p.text-muted Félagsleg umhverfismál
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            | Auk þúsunda umhverfissinna sem standa saman í að gera heiminn að betri stað.
+//-//////////////
+//- Services
+block ploggin
+    | Plogg-In er kortlagningarkerfi fyrir plokkara, útivistarfólk og umhverfissinna sem hvetur til aukinnar umhverfisvitundar, verndar og stuðlar um leið að heilsueflandi hreyfingu. Kortið er með einfalt viðmót sem sýnir þau svæði sem er búið að hreinsa og gerir notendum kleift að skipuleggja plokkferðir sínar.
 
-        // Portfolio Grid
-        //section#portfolio.page-section.bg-light
-        //    .container
-        //        .text-center
-        //            h2.section-heading.text-uppercase Blogg-In
-        //            h3.section-subheading.text-muted Some interesting articles from us!
-        //        .row
-        //            .col-lg-4.col-sm-6.mb-4
-        //                .portfolio-item
-        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
-        //                        .portfolio-hover
-        //                            .portfolio-hover-content
-        //                                i.fas.fa-plus.fa-3x
-        //                        img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
-        //                    .portfolio-caption(data-toggle='modal', href='#portfolioModal1')
-        //                        .portfolio-caption-heading Ploggin-In
-        //                        .portfolio-caption-subheading.text-muted Read more to find out what is Plogg-In!
-        //            .col-lg-4.col-sm-6.mb-4
-        //                .portfolio-item
-        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
-        //                        .portfolio-hover
-        //                            .portfolio-hover-content
-        //                                i.fas.fa-plus.fa-3x
-        //                        img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
-        //                    .portfolio-caption
-        //                        .portfolio-caption-heading Explore
-        //                        .portfolio-caption-subheading.text-muted Graphic Design
-        //            .col-lg-4.col-sm-6.mb-4
-        //                .portfolio-item
-        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
-        //                        .portfolio-hover
-        //                            .portfolio-hover-content
-        //                                i.fas.fa-plus.fa-3x
-        //                        img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
-        //                    .portfolio-caption
-        //                        .portfolio-caption-heading Finish
-        //                        .portfolio-caption-subheading.text-muted Identity
+block gognin
+    | Gögn-In er kerfi sem safnar landfræðilegum rauntímagögnum til bestunar á ýmsum umhverfistengdum verkefnum og rannsóknum og staðlar þau. 
 
-        // Clients
-        div.py-5.clients
-            .container
-                .row
-                    .col-md.col-sm-6.my-3
-                        a(href='https://site.ieee.org/iceland/about-us/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/ieee.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://landvernd.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/landvernd.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://reykjavik.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/reykjavik.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://www.snjallraedi.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/snjallraedi.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://designx.mit.edu/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/mit.png', alt='')
+block bin
+    | B-In er kerfi sem notar bæði gögn úr Plogg-In og Gögn-In til að álykta stöðu ruslastampa í rauntíma.
 
-        // Contact
-        section#contact.page-section
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase Hafðu samband
-                    //h3.section-subheading hello@PLOGGIN.is
-                    h4.section-heading.my-3.text-warning hello@PLOGGIN.is
-                //form#contactForm(name='sentMessage', novalidate='novalidate')
-                //    .row.align-items-stretch.mb-5
-                //        .col-md-6
-                //            .form-group
-                //                input#name.form-control(type='text', placeholder='Your Name *', required='required', data-validation-required-message='Please enter your name.')
-                //                p.help-block.text-danger
-                //            .form-group
-                //                input#email.form-control(type='email', placeholder='Your Email *', required='required', data-validation-required-message='Please enter your email address.')
-                //                p.help-block.text-danger
-                //            .form-group.mb-md-0
-                //                input#phone.form-control(type='tel', placeholder='Your Phone *', required='required', data-validation-required-message='Please enter your phone number.')
-                //                p.help-block.text-danger
-                //        .col-md-6
-                //            .form-group.form-group-textarea.mb-md-0
-                //                textarea#message.form-control(placeholder='Your Message *', required='required', data-validation-required-message='Please enter a message.')
-                //                p.help-block.text-danger
-                //    .text-center
-                //            #success
-                //            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
 
-        // Footer
-        footer.footer.py-4
-            .container
-                .row.align-items-center
-                    .col-lg-4.text-lg-left
-                        | Copyright © PLOGG-IN 2020
-                    //.col-lg-4.my-3.my-lg-0
-                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                        //    i.fab.fa-twitter
-                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                        //    i.fab.fa-facebook-f
-                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                        //    i.fab.fa-linkedin-in
-                    //.col-lg-4.text-lg-right
-                    //    a.mr-3(href='#!') Privacy Policy
-                    //    a(href='#!') Terms of Use
+//-//////////////
+//- OUR STORY
+block about_text
+    div Tímalína sem stiklar á stóru um sögu Plogg-In.
 
-        // Portfolio Modals
-        // Modal 1
-        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Plogg-In
-                                    p.item-intro.text-muted What is Plogg-in? And why do we need it?
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Author: Guolin Fang
-                                        li Category: Plogg-In
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
-        // Modal 2
-        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Explore
-                                        li Category: Graphic Design
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
-        // Modal 3
-        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/03-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Finish
-                                        li Category: Identity
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
-        // Modal 4
-        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/04-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Lines
-                                        li Category: Branding
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
-        // Modal 5
-        #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/05-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Southwest
-                                        li Category: Website Design
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
-        // Modal 6
-        #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
-            .modal-dialog
-                .modal-content
-                    .close-modal(data-dismiss='modal')
-                        img(src="assets/img/close-icon.svg", alt='Close modal')
-                    .container
-                        .row.justify-content-center
-                            .col-lg-8
-                                .modal-body
-                                    // Project Details Go Here
-                                    h2.text-uppercase Project Name
-                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
-                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/06-full.jpg', alt='')
-                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
-                                    ul.list-inline
-                                        li Date: January 2020
-                                        li Client: Window
-                                        li Category: Photography
-                                    button.btn.btn-primary(data-dismiss='modal', type='button')
-                                        i.fas.fa-times.mr-1
-                                        | Close Project
+block story_1_date
+    div Maí 2018
 
-        // Bootstrap core JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
-        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+block story_1_title
+    div Topp 3 Borgarhakkið
 
-        // Third party plugin JS
-        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+block story_1_text
+    | Grunnhugmynd fyrir Plogg-In varð til í Borgarhakki Reykjavíkurborgar 2018 en þar komst teymið í þriggja liða úrslit og hefur síðan þá unnið með Snjallborginni í Reykjavík í að betrumbæta hugmyndina.
 
-        // Contact form JS
-        script(src='assets/mail/jqBootstrapValidation.js')
-        script(src='assets/mail/contact_me.js')
+block story_2_date
+    div Apríl 2019
 
-        // Core theme JS
-        script(src='js/scripts.js')
+block story_2_title
+    div Stóri plokkdagurinn
+
+block story_2_text
+    | Stóri plokkdagurinn var haldinn 28.apríl 2019 en þá fengust yfir 1000 skráningar sem sýndu svæði sem voru hreinsuð en á einum degi var samanlögð stærð þeirra á við Vestmannaeyjar (17.2 km2).
+                                    
+block story_3_date
+    div September 2019
+
+block story_3_title
+    div Sigruðum Milljón tonna áskorun
+
+block story_3_text
+    | Gögn-In vann Milljón tonna áskorun Viðskiptaráðs með kerfi sínu þar sem lögð var áhersla á að safna landfræðilegum rauntímagögnum og staðla þau sem seinna nýtast við margskonar rannsóknir.
+
+block story_4_date
+    div September 2019
+
+block story_4_title
+    div Sigruðum Borgarhakkið
+
+block story_4_text
+    | Gögn-In hlaut sigur úr býtum í Borgarhakki Reykjavíkurborgar 2019 með hugmynd að betri tímatöflu fyrri strætó sem sameinar núverandi tímatöflu Strætó og stundartöflu frá öllum skólum á Íslandi.
+
+block story_5_date
+    div Október 2019
+
+block story_5_title
+    div Snjallræði
+
+block story_5_text
+    | Plogg-In hlaut þátttökurétt í Snjallræði 2019 þar sem teymið fékk leiðsögn séfræðinga frá MIT-Design X auk annarra mentora í að smíða viðskiptalíkan fyrir Plogg-In.
+
+block story_6_date
+    div Nóvember 2019
+
+block story_6_title
+    div Smart City expo
+
+block story_6_text
+    | Í samstarfi við Reykjavíkurborg fór teymið til Barcelona á Smart City Expo 2019, eina stærstu snjallborgarráðstefnu heims, þar sem B-in og Plogg-in voru kynntar. Plogg-In vakti mikinn  áhuga, þ.á.m. hjá borgarfulltrúa Helsinki og Stokkhólms. Teymið er einnig í samstarfi við Reyjavíkurborg í að nota rauntímagögn til að álykta stöðu ruslastama í borgarinnar til að koma í veg fyrir yfirflæði rusls. 
+
+block story_6_date
+    div Febrúar 2020
+
+block story_6_title
+    div Topp 3 sprota ársins 
+
+block story_6_text
+    | Plogg-In var tilnefnt sem Sprotafyrirtæki ársins 2020 að mati Ský í UT messunni, í flokki með Genki Instrument og Emblu frá Miðeind. Teymið hlaut Genki Instrument verðlaunin.
+
+block bepartofourstory
+    | Vertu hluti
+    br
+    | af okkar
+    br
+    | sögu!
+
+//-//////////////
+//- TEAM
+block teamtitle
+    div Magnaða teymi
+
+block teamtext
+    div Plogg-In teymið samanstendur af sex metnaðarfullum einstaklingum með ólíkan bakgrunn. 
+
+block kristjana
+    | Framkvæmdarstjóri og meðstofnandi
+
+block stefan
+    | Tæknistjóri og meðstofnandi
+
+block guolin
+    | Forritari og stofnandi
+
+block hulda
+    | Markaðssetning
+
+block thorgeir
+    | Forritari
+
+block sollilja
+    | Umhverfisfræðingur
+
+block about_suffix_text
+    | Auk þúsunda umhverfissinna sem standa saman í að gera heiminn að betri stað.
+
+
+//-//////////////
+//- TEAM
+block contact
+    |  Hafðu samband
