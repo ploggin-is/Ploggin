@@ -26,13 +26,17 @@
         .nav-item {
             .nav-link {
                 font-family: $headings-font-family;
-                font-size: 0.95rem;
+                font-size: 0.9rem;
                 color: $light_brown;
                 letter-spacing: $headings-letter-spacing;
                 &.active,
                 &:hover {
                     color: $primary;
                 }
+            }
+            .nav-link-small {
+                padding-top: 10px;
+                font-size: 0.8rem;
             }
         }
     }
@@ -64,7 +68,7 @@
                 font-size: 1.25em;
                 svg,
                 img {
-                    height: 1.5rem;
+                    height: 2.5rem;
                 }
             }
         }

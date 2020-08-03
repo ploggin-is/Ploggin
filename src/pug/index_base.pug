@@ -2,7 +2,7 @@
 html(lang='en')
 
     head
-
+        base(href="/")
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
         meta(name='description', content='With a better information technology tools and a strong communication system, we can make every part of the map green')
@@ -41,11 +41,11 @@ html(lang='en')
                             a.nav-link.js-scroll-trigger(href='#product')
                                 block services
                         li.nav-item
-                            a.nav-link.js-scroll-trigger(href='#about')
-                                block about
-                        li.nav-item
                             a.nav-link.js-scroll-trigger(href='#team')
                                 block team
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about')
+                                block about
                         li.nav-item
                             a.nav-link.js-scroll-trigger(href='#contact')
                                 block contact
@@ -98,6 +98,93 @@ html(lang='en')
                         h4.my-3 B-In
                         p.text-muted
                             block bin
+
+        // Team
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block teamtitle
+                    h3.section-subheading.text-muted
+                        block teamtext
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/kristjana.png', alt='')
+                            h4 Kristjana Björk Barðdal
+                            p.text-muted
+                                block kristjana
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/stefan.jpg', alt='')
+                            h4 Stefán Carl Peiser
+                            p.text-muted
+                                block stefan
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/guolin.jpg', alt='')
+                            h4 Guolin Fang
+                            p.text-muted
+                                block guolin
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/hulda.jpg', alt='')
+                            h4 Hulda Vigdísardóttir
+                            p.text-muted
+                                block hulda
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/thorgeir.jpg', alt='')
+                            h4 Þorgeir Sigurðsson
+                            p.text-muted
+                                block thorgeir
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/sollilja.jpg', alt='')
+                            h4 Sóllilja Bjarnadóttir
+                            p.text-muted
+                                block sollilja
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                .row
+                    .col-lg-8.mx-auto.text-center
+                        p.large.text-muted
+                            block about_suffix_text
                             
         // About
         section#about.page-section
@@ -200,92 +287,6 @@ html(lang='en')
                         .timeline-image.timeline-big
                             h4
                                 block bepartofourstory
-        // Team
-        section#team.page-section.bg-light
-            .container
-                .text-center
-                    h2.section-heading.text-uppercase
-                        block teamtitle
-                    h3.section-subheading.text-muted
-                        block teamtext
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/kristjana.png', alt='')
-                            h4 Kristjana Björk Barðdal
-                            p.text-muted
-                                block kristjana
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/stefan.jpg', alt='')
-                            h4 Stefán Carl Peiser
-                            p.text-muted
-                                block stefan
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/guolin.jpg', alt='')
-                            h4 Guolin Fang
-                            p.text-muted
-                                block guolin
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                .row
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/hulda.jpg', alt='')
-                            h4 Hulda Vigdísardóttir
-                            p.text-muted
-                                block hulda
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/thorgeir.jpg', alt='')
-                            h4 Þorgeir Sigurðsson
-                            p.text-muted
-                                block thorgeir
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                    .col-lg-4
-                        .team-member
-                            img.mx-auto.rounded-circle(src='assets/img/team/sollilja.jpg', alt='')
-                            h4 Sóllilja Bjarnadóttir
-                            p.text-muted
-                                block sollilja
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-twitter
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-facebook-f
-                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            //    i.fab.fa-linkedin-in
-                .row
-                    .col-lg-8.mx-auto.text-center
-                        p.large.text-muted
-                            block about_suffix_text
 
         // Portfolio Grid
         //section#portfolio.page-section.bg-light
@@ -325,26 +326,6 @@ html(lang='en')
         //                        .portfolio-caption-heading Finish
         //                        .portfolio-caption-subheading.text-muted Identity
 
-        // Clients
-        div.py-5.clients
-            .container
-                .row
-                    .col-md.col-sm-6.my-3
-                        a(href='https://site.ieee.org/iceland/about-us/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/ieee.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://landvernd.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/landvernd.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://reykjavik.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/reykjavik.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://www.snjallraedi.is/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/snjallraedi.png', alt='')
-                    .col-md.col-sm-6.my-3
-                        a(href='https://designx.mit.edu/')
-                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/mit.png', alt='')
-
         // Contact
         section#contact.page-section
             .container
@@ -373,11 +354,32 @@ html(lang='en')
                 //            #success
                 //            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
 
+        // Clients
+        div.py-5.clients
+            .container
+                .row
+                    .col-md.col-sm-6.my-3
+                        a(href='https://site.ieee.org/iceland/about-us/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/ieee.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://landvernd.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/landvernd.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://reykjavik.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/reykjavik.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://www.snjallraedi.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/snjallraedi.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://designx.mit.edu/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/mit.png', alt='')
+
+
         // Footer
-        footer.footer.py-4
+        footer.footer.py-4.bg-dark
             .container
                 .row.align-items-center
-                    .col-lg-4.text-lg-left
+                    .col-lg-4.text-lg-left.text-white
                         | Copyright © PLOGG-IN 2020
                     //.col-lg-4.my-3.my-lg-0
                         //a.btn.btn-dark.btn-social.mx-2(href='#!')

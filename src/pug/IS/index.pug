@@ -1,4 +1,4 @@
-extends index_base.pug
+extends ../index_base.pug
 
 //-//////////////
 //- NAVBAR
@@ -9,7 +9,7 @@ block vision_text
     div Með betri upplýsingatæknitól og sterkari samskiptakerfum getum við gert allt kortið grænt!
 
 block services
-    div Þjónustur
+    div Þjónustuleiðir
 
 block about
     div Sagan okkar
@@ -21,8 +21,9 @@ block contact
     div Hafa samband
 
 block language
-    a.nav-link.js-scroll-trigger(href='./EN/index.html', style='padding-top: 6px;')
+    a.nav-link-small.nav-link.js-scroll-trigger(href='./EN/index.html')
         img(src='assets/img/en.png', alt='english')
+        | EN
 
 //-//////////////
 //- MASTERHEAD
