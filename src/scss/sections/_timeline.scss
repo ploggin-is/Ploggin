@@ -71,6 +71,9 @@ $story-bullet-txt-color: #6c757d;
             border: 7px solid #b0f9c2;
             h4 {
                 color: $story-bullet-txt-color;
+                font-size: 0.7rem;
+                line-height: 0.7rem;
+                margin-top: 1.3rem;
             }
         }
         &.timeline-inverted > .timeline-panel {
@@ -145,9 +148,16 @@ $story-bullet-txt-color: #6c757d;
                 height: 175px;
                 margin-left: -89px;
                 h4 {
-                    font-size: 26px;
-                    line-height: 30px;
-                    margin-top: 36px;
+                    font-size: 1.5rem;
+                    line-height: 1.5rem;
+                    margin-top: 3.2rem;
+                    //font-size: 2rem;
+                    //line-height: 2rem;
+                    //margin-top: 4.2rem;
+                    //font-size: 26px;
+                    //line-height: 30px;
+                    ////margin-top: 36px;
+                    //margin-top: 4.2rem;
                 }
             }
         }
@@ -178,9 +188,9 @@ $story-bullet-txt-color: #6c757d;
                 height: 230px;
                 margin-left: -117px;
                 h4 {
-                    font-size: 33px;
-                    line-height: 39px;
-                    margin-top: 49px;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    margin-top: 4.2rem;
                 }
             }
         }
@@ -209,9 +219,9 @@ $story-bullet-txt-color: #6c757d;
                 height: 230px;
                 margin-left: -117px;
                 h4 {
-                    font-size: 33px;
-                    line-height: 39px;
-                    margin-top: 49px;
+                    font-size: 2rem;
+                    line-height: 2rem;
+                    margin-top: 4.3rem;
                 }
             }
         }

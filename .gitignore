@@ -1,5 +1,3 @@
 node_modules
 *.swp
-dist/CNAME
-dist/index.md
 .DS_Store
