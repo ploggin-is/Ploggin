@@ -1,0 +1,539 @@
+
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='With a better information technology tools and a strong communication system, we can make every part of the map green')
+        meta(name='author', content='')
+
+        title PLOGGIN
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.13.0/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
+            .container
+                a.navbar-brand.js-scroll-trigger(href='#page-top')
+                    img(src='assets/img/logos/ploggin_logo.jpg', alt='')
+                button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                    i.fas.fa-bars
+                #navbarResponsive.collapse.navbar-collapse
+                    ul.navbar-nav.text-uppercase.ml-auto
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#services')
+                                block vision
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#product')
+                                block services
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#about')
+                                block about
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#team')
+                                block team
+                        li.nav-item
+                            a.nav-link.js-scroll-trigger(href='#contact')
+                                block contact
+                        li.nav-item
+                            block language
+
+        // Masthead
+        header.masthead
+            .container
+                .masthead-subheading
+                    block subtitle
+                .masthead-heading.text-uppercase
+                    block title
+                //a.btn.btn-primary.btn-xl.text-uppercase.js-scroll-trigger(href='#services')#cover-drop-down
+                //    block seemore
+
+        // Services
+        section#services.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block vision
+                    h3.section-subheading.text-muted
+                        block vision_text
+                    img.img-fluid.d-block.mx-auto(src='assets/img/map.png', alt='').w-75.p-3
+        
+        // Services
+        section#product.page-section 
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block services
+            .container
+                .row.text-center
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.far.fa-map.fa-stack-1x.svg-green
+                        h4.my-3 Plogg-In
+                        p.text-muted
+                            block ploggin
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.far.fa-hdd.fa-stack-1x.svg-green
+                        h4.my-3 Gögn-In
+                        p.text-muted
+                            block gognin
+                    .col-md-4
+                        span.fa-stack.fa-4x
+                            i.far.fa-trash-alt.fa-stack-1x.svg-green
+                        h4.my-3 B-In
+                        p.text-muted
+                            block bin
+                            
+        // About
+        section#about.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block about
+                    h3.section-subheading.text-muted
+                        block about_text
+                ul.timeline
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/snjallborgin2018.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_1_date
+                                h4.subheading
+                                    block story_1_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_1_text
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/plokkaradagurinn.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_2_date
+                                h4.subheading
+                                    block story_2_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_2_text
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/milljonaskorun.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_3_date
+                                h4.subheading
+                                    block story_3_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_3_text
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/borgarhakkid2019.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_4_date
+                                h4.subheading
+                                    block story_4_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_4_text
+
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/snjallraedi2019.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_5_date
+                                h4.subheading
+                                    block story_5_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_5_text
+
+                    li.timeline-inverted
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/smartcity.jpg', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_6_date
+                                h4.subheading
+                                    block story_6_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_6_text
+                    li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='assets/img/about/topsprota.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_7_date
+                                h4.subheading
+                                    block story_7_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_7_text
+
+                    li.timeline-inverted
+                        .timeline-image.timeline-big
+                            h4
+                                block bepartofourstory
+        // Team
+        section#team.page-section.bg-light
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block teamtitle
+                    h3.section-subheading.text-muted
+                        block teamtext
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/kristjana.png', alt='')
+                            h4 Kristjana Björk Barðdal
+                            p.text-muted
+                                block kristjana
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/stefan.jpg', alt='')
+                            h4 Stefán Carl Peiser
+                            p.text-muted
+                                block stefan
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/guolin.jpg', alt='')
+                            h4 Guolin Fang
+                            p.text-muted
+                                block guolin
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                .row
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/hulda.jpg', alt='')
+                            h4 Hulda Vigdísardóttir
+                            p.text-muted
+                                block hulda
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/thorgeir.jpg', alt='')
+                            h4 Þorgeir Sigurðsson
+                            p.text-muted
+                                block thorgeir
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col-lg-4
+                        .team-member
+                            img.mx-auto.rounded-circle(src='assets/img/team/sollilja.jpg', alt='')
+                            h4 Sóllilja Bjarnadóttir
+                            p.text-muted
+                                block sollilja
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                .row
+                    .col-lg-8.mx-auto.text-center
+                        p.large.text-muted
+                            block about_suffix_text
+
+        // Portfolio Grid
+        //section#portfolio.page-section.bg-light
+        //    .container
+        //        .text-center
+        //            h2.section-heading.text-uppercase Blogg-In
+        //            h3.section-subheading.text-muted Some interesting articles from us!
+        //        .row
+        //            .col-lg-4.col-sm-6.mb-4
+        //                .portfolio-item
+        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal1')
+        //                        .portfolio-hover
+        //                            .portfolio-hover-content
+        //                                i.fas.fa-plus.fa-3x
+        //                        img.img-fluid(src='assets/img/portfolio/01-thumbnail.jpg', alt='')
+        //                    .portfolio-caption(data-toggle='modal', href='#portfolioModal1')
+        //                        .portfolio-caption-heading Ploggin-In
+        //                        .portfolio-caption-subheading.text-muted Read more to find out what is Plogg-In!
+        //            .col-lg-4.col-sm-6.mb-4
+        //                .portfolio-item
+        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal2')
+        //                        .portfolio-hover
+        //                            .portfolio-hover-content
+        //                                i.fas.fa-plus.fa-3x
+        //                        img.img-fluid(src='assets/img/portfolio/02-thumbnail.jpg', alt='')
+        //                    .portfolio-caption
+        //                        .portfolio-caption-heading Explore
+        //                        .portfolio-caption-subheading.text-muted Graphic Design
+        //            .col-lg-4.col-sm-6.mb-4
+        //                .portfolio-item
+        //                    a.portfolio-link(data-toggle='modal', href='#portfolioModal3')
+        //                        .portfolio-hover
+        //                            .portfolio-hover-content
+        //                                i.fas.fa-plus.fa-3x
+        //                        img.img-fluid(src='assets/img/portfolio/03-thumbnail.jpg', alt='')
+        //                    .portfolio-caption
+        //                        .portfolio-caption-heading Finish
+        //                        .portfolio-caption-subheading.text-muted Identity
+
+        // Clients
+        div.py-5.clients
+            .container
+                .row
+                    .col-md.col-sm-6.my-3
+                        a(href='https://site.ieee.org/iceland/about-us/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/ieee.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://landvernd.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/landvernd.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://reykjavik.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/reykjavik.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://www.snjallraedi.is/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/snjallraedi.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://designx.mit.edu/')
+                            img.img-fluid.d-block.mx-auto(src='assets/img/logos/mit.png', alt='')
+
+        // Contact
+        section#contact.page-section
+            .container
+                .text-center
+                    h2.section-heading.text-uppercase
+                        block contact
+                    //h3.section-subheading hello@PLOGGIN.is
+                    h4.section-heading.my-3.text-warning hello@ploggin.is
+                //form#contactForm(name='sentMessage', novalidate='novalidate')
+                //    .row.align-items-stretch.mb-5
+                //        .col-md-6
+                //            .form-group
+                //                input#name.form-control(type='text', placeholder='Your Name *', required='required', data-validation-required-message='Please enter your name.')
+                //                p.help-block.text-danger
+                //            .form-group
+                //                input#email.form-control(type='email', placeholder='Your Email *', required='required', data-validation-required-message='Please enter your email address.')
+                //                p.help-block.text-danger
+                //            .form-group.mb-md-0
+                //                input#phone.form-control(type='tel', placeholder='Your Phone *', required='required', data-validation-required-message='Please enter your phone number.')
+                //                p.help-block.text-danger
+                //        .col-md-6
+                //            .form-group.form-group-textarea.mb-md-0
+                //                textarea#message.form-control(placeholder='Your Message *', required='required', data-validation-required-message='Please enter a message.')
+                //                p.help-block.text-danger
+                //    .text-center
+                //            #success
+                //            button#sendMessageButton.btn.btn-primary.btn-xl.text-uppercase(type='submit') Send Message
+
+        // Footer
+        footer.footer.py-4
+            .container
+                .row.align-items-center
+                    .col-lg-4.text-lg-left
+                        | Copyright © PLOGG-IN 2020
+                    //.col-lg-4.my-3.my-lg-0
+                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                        //    i.fab.fa-twitter
+                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                        //    i.fab.fa-facebook-f
+                        //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                        //    i.fab.fa-linkedin-in
+                    //.col-lg-4.text-lg-right
+                    //    a.mr-3(href='#!') Privacy Policy
+                    //    a(href='#!') Terms of Use
+
+        // Portfolio Modals
+        // Modal 1
+        #portfolioModal1.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Plogg-In
+                                    p.item-intro.text-muted What is Plogg-in? And why do we need it?
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/01-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Author: Guolin Fang
+                                        li Category: Plogg-In
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+        // Modal 2
+        #portfolioModal2.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Project Name
+                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/02-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Client: Explore
+                                        li Category: Graphic Design
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+        // Modal 3
+        #portfolioModal3.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Project Name
+                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/03-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Client: Finish
+                                        li Category: Identity
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+        // Modal 4
+        #portfolioModal4.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Project Name
+                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/04-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Client: Lines
+                                        li Category: Branding
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+        // Modal 5
+        #portfolioModal5.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Project Name
+                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/05-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Client: Southwest
+                                        li Category: Website Design
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+        // Modal 6
+        #portfolioModal6.portfolio-modal.modal.fade(tabindex='-1', role='dialog', aria-hidden='true')
+            .modal-dialog
+                .modal-content
+                    .close-modal(data-dismiss='modal')
+                        img(src="assets/img/close-icon.svg", alt='Close modal')
+                    .container
+                        .row.justify-content-center
+                            .col-lg-8
+                                .modal-body
+                                    // Project Details Go Here
+                                    h2.text-uppercase Project Name
+                                    p.item-intro.text-muted Lorem ipsum dolor sit amet consectetur.
+                                    img.img-fluid.d-block.mx-auto(src='assets/img/portfolio/06-full.jpg', alt='')
+                                    p Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!
+                                    ul.list-inline
+                                        li Date: January 2020
+                                        li Client: Window
+                                        li Category: Photography
+                                    button.btn.btn-primary(data-dismiss='modal', type='button')
+                                        i.fas.fa-times.mr-1
+                                        | Close Project
+
+        // Bootstrap core JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js')
+
+        // Third party plugin JS
+        script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js')
+
+        // Contact form JS
+        script(src='assets/mail/jqBootstrapValidation.js')
+        script(src='assets/mail/contact_me.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')

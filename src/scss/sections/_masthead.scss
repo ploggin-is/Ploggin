@@ -2,7 +2,7 @@
 header.masthead {
     height: 100vh;
     min-height: 500px;
-    padding-top: 16rem;
+    padding-top: 23rem;
     padding-bottom: 6rem;
     text-align: center;
     color: $white;
@@ -12,9 +12,9 @@ header.masthead {
     background-position: right;
     background-size: cover;
     .masthead-subheading {
-        font-size: 1.5rem;
+        font-size: 2.5rem;
         font-style: italic;
-        line-height: 1.5rem;
+        line-height: 2.5rem;
         margin-bottom: 25px;
         font-family: $subheadings-font-family;
     }
@@ -29,12 +29,13 @@ header.masthead {
 
 @include media-breakpoint-up(md) {
     header.masthead {
-        padding-top: 12.5rem + 4.5rem;
+        //padding-top: 12.5rem + 4.5rem;
+        padding-top: 20rem;
         padding-bottom: 12.5rem;
         .masthead-subheading {
-            font-size: 2.25rem;
+            font-size: 3.25rem;
             font-style: italic;
-            line-height: 2.25rem;
+            line-height: 3.25rem;
             margin-bottom: 2rem;
         }
         .masthead-heading {
