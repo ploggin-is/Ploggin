@@ -10511,6 +10511,21 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
+.advisor-member {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+.advisor-member img {
+  width: 8rem;
+  height: 8rem;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+}
+.advisor-member h4 {
+  font-size: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
 section#contact {
   background-color: #212529;
   background-image: url("../assets/img/map-image.png");
