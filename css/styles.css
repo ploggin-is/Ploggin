@@ -10511,6 +10511,10 @@ header.masthead .masthead-heading {
   margin-bottom: 0;
 }
 
+.row.centered {
+  justify-content: center;
+}
+
 .advisor-member {
   margin-bottom: 3rem;
   text-align: center;
