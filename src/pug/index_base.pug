@@ -107,7 +107,7 @@ html(lang='en')
                     h3.section-subheading.text-muted
                         block teamtext
                 .row
-                    .col-lg-3
+                    .col
                         .team-member
                             img.mx-auto.rounded-circle(src='../assets/img/team/guolin.jpg', alt='')
                             h4 Guolin Fang
@@ -119,19 +119,19 @@ html(lang='en')
                             //    i.fab.fa-facebook-f
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-linkedin-in
-                    .col-lg-3
+                    .col
                         .team-member
-                            img.mx-auto.rounded-circle(src='../assets/img/team/stefan.jpg', alt='')
-                            h4 Stefán Þorvarðarson
+                            img.mx-auto.rounded-circle(src='../assets/img/team/lara.jpg', alt='')
+                            h4 Lára Margrét Hólmfríðar-dóttir
                             p.text-muted
-                                block stefan
+                                block lara
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-twitter
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-facebook-f
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-linkedin-in
-                    .col-lg-3
+                    .col
                         .team-member
                             img.mx-auto.rounded-circle(src='../assets/img/team/benedikt.jpg', alt='')
                             h4 Benedikt Þórðarson
@@ -143,12 +143,24 @@ html(lang='en')
                             //    i.fab.fa-facebook-f
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-linkedin-in
-                    .col-lg-3
+                    .col
                         .team-member
                             img.mx-auto.rounded-circle(src='../assets/img/team/magdalena.jpg', alt='')
                             h4 Magdalena A. Torfadóttir
                             p.text-muted
                                 block magdalena
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    .col
+                        .team-member
+                            img.mx-auto.rounded-circle(src='../assets/img/team/ioana.jpg', alt='')
+                            h4 Ioana Duta-Visescu
+                            p.text-muted
+                                block ioana
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-twitter
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
@@ -271,6 +283,19 @@ html(lang='en')
                                     block story_8_text
 
                     li
+                        .timeline-image
+                            img.rounded-circle.img-fluid(src='../assets/img/about/topsprota.png', alt='')
+                        .timeline-panel
+                            .timeline-heading
+                                h4
+                                    block story_9_date
+                                h4.subheading
+                                    block story_9_title
+                            .timeline-body
+                                p.text-muted
+                                    block story_9_text
+
+                    li
                         .timeline-image.timeline-big
                             h4
                                 block bepartofourstory
@@ -347,13 +372,25 @@ html(lang='en')
                             //    i.fab.fa-facebook-f
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-linkedin-in
-
                     .col-lg
                         .advisor-member
                             img.mx-auto.rounded-circle(src='../assets/img/advisors/kristinn.jpg', alt='')
                             h4 Kristinn Jón Ólafsson
                             p.text-muted
                                 block advisor_kristinn
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-twitter
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-facebook-f
+                            //a.btn.btn-dark.btn-social.mx-2(href='#!')
+                            //    i.fab.fa-linkedin-in
+                    
+                    .col-lg
+                        .advisor-member
+                            img.mx-auto.rounded-circle(src='../assets/img/advisors/luka.jpg', alt='')
+                            h4 Luca Aceto
+                            p.text-muted
+                                block advisor_luka
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //    i.fab.fa-twitter
                             //a.btn.btn-dark.btn-social.mx-2(href='#!')
@@ -388,6 +425,9 @@ html(lang='en')
                     .col-md.col-sm-6.my-3
                         a(href='https://designx.mit.edu/')
                             img.img-fluid.d-block.mx-auto(src='../assets/img/logos/mit.png', alt='')
+                    .col-md.col-sm-6.my-3
+                        a(href='https://ru.is/')
+                            img.img-fluid.d-block.mx-auto(src='../assets/img/logos/ru.png', alt='')
 
 
         // Contact
@@ -424,7 +464,7 @@ html(lang='en')
             .container
                 .row.align-items-center
                     .col-lg-4.text-lg-left
-                        | Copyright © PLOGG-IN 2020
+                        | Copyright © PLOGG-IN 2022
                     //.col-lg-4.my-3.my-lg-0
                         //a.btn.btn-dark.btn-social.mx-2(href='#!')
                         //    i.fab.fa-twitter
